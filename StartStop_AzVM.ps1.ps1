@@ -2,15 +2,11 @@
 
 param(
     [parameter(Mandatory = $false)]
-    [string]$SubscriptionId = "58bd5294-457f-4678-9863-d69613d6dd51",
+    [string]$SubscriptionId = "SampleText",
     [parameter(Mandatory = $false)]
     [string]$TagName = "StopStartSchedule",
     [parameter(Mandatory = $false)]
-    [string]$ResourceGroupName = "VMStartStop",
-    [parameter(Mandatory = $false)]
-    [string]$TimeZone = "UTC",
-    [parameter(Mandatory = $false)]
-    [string]$AutomationAccountName = "VMStartStop"
+    [string]$TimeZone = "UTC"
 )
 
 # the runbook is based on a unique tag applied on target VMs. The value of this tag must match the following expression : Weekdays=07:00–22:00 / Weekends=09:00–20:00. Values for weekdays and weekends can be :
